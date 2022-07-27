@@ -6,10 +6,21 @@ CRUD scaffolding for vlang
 - [v] Read (Item)
 - [v] Update (Form)
 - [v] Delete (button)
+- [ ] Comand line create crud tables and code 
 
 Howto
 ===
 
-1. Edit file model.json according your table
-2. Exec command: v run make.v
-3. Run: v run main.v
+1. Male executional file: 
+
+````bash
+chmod +x run.sh
+````
+
+2. Exec command: 
+
+````bash
+./run.sh
+```
+
+3. Open browser on http://localhost:8081
