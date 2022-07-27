@@ -1,0 +1,33 @@
+@include '_header'
+
+<section>
+  <h4>Utilities</h4>
+  <p>
+    You can apply these helper classes to almost any element, in order to alter
+    its style.
+  </p>
+  <h3><a class="button primary" href="/new" target="_self">New</a></h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>FIO</th>
+        <th>TEL</th>
+        <th>ACTIONS</th>
+      </tr>
+    </thead>
+    <tbody>
+       @for row in records
+    <tr>
+      <td>@row.id</td>
+      <td>@row.fullname</td>
+      <td>@row.tel</td>
+      <td><a href="/edit/@{row.id}" target="_self">&#128393;</a> <a href="/del/@{row.id}" target="_self"><font color=red>x</font></a></td>
+    </tr>
+    @end
+  </tbody>
+</table>
+</section>
+  
+@include '_footer'

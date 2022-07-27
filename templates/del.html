@@ -1,0 +1,26 @@
+@include '_header'
+
+<section>
+<div class="row is-left">
+    <div class="col-6">
+		<form action='/del' method='post'>
+			<input type='hidden' name='rawid' value="@rec.id">
+	        <header>
+	          <h4>Delete confirmation</h4>
+	        </header>
+	        <p><font color=red>A you sure for delete this record?</font></p>
+			<input type='text' placeholder='Fullname' name='fullname' value="@rec.fullname" readonly>
+			<br>
+			<!-- <textarea placeholder='Text' name='text'></textarea> -->
+			<input type='tel' placeholder='Title' name='tel' value="@rec.tel" readonly>
+			<br>
+	        <footer>
+			<a class="button" href="/" target="_self">Cancel</a>
+			<input class="button error" type='submit' value='Delete'>
+	        </footer>
+		</form>
+    </div>
+  </div>
+</section>
+
+@include '_footer'

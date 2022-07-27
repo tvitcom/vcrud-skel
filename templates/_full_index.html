@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/chota.css">
+  <!-- for dev -->
+  <!-- <link rel="stylesheet" href="./dist/chota.css"> -->
+  <link rel="stylesheet" href="/assets/doc-styles.css">
+  <link rel="icon" type="image/png" href="https://jenil.github.io/chota/favicon.png">
+</head>
+
+<body id="top">
+
+<div class="container">
+
+<!-- <nav class="tabs">
+  <a>Tab 1</a>
+  <a>Tab 2</a>
+  <a class="active">Tab 3</a>
+</nav> -->
+
+<!-- <nav class="nav">
+  <div class="nav-left">
+    <a class="brand">
+      <img src="/assets/search.svg" alt="">
+    </a>
+  </div>   
+
+  <div class="nav-right">
+    <a>Link 3</a>
+    <a>Link 4</a>
+    <details class="dropdown">
+      <summary class="button clear">My Profile</summary>
+        <div class="card">
+          <p><a href="#">Edit</a></p>
+          <p><a href="#">Alerts&nbsp;<span class="tag">3</span></a></p>
+          <hr>
+          <p><a href="#" class="text-error">Logout</a></p>
+      </div>
+    </details>
+    <details class="dropdown">
+      <summary class="button clear">Login</summary>
+      <form class="card row">
+        <input class="col-12" placeholder="username">
+        <input class="col-12" placeholder="password" type="password">
+        <footer class="is-right">
+          <a class="button clear">Sign up</a>
+          <button type="submit">Sign in</button>
+        </footer>
+      </form>
+    </details>
+  </div>
+</nav> -->
+
+  <!--nav class="tabs">
+    <a href="#grid">grid</a>
+    <a href="#buttons">buttons</a>
+    <a href="#nav">nav</a>
+    <a href="#card">card</a>
+    <a href="#tag">tag</a>
+    <a href="#utilities">utilities</a>
+      <details class="dropdown">
+        <summary class="">Login</summary>
+        <form class="card row">
+          <input class="col-12" placeholder="username">
+          <input class="col-12" placeholder="password" type="password">
+          <footer class="is-right">
+            <a class="button clear">Sign up</a>
+            <button type="submit">Sign in</button>
+          </footer>
+        </form>
+      </details>
+  </nav-->
+
+<!-- <nav class="nav">
+  <div class="nav-left">
+    <a class="brand" href="#">Brand</a>
+    <div class="tabs">
+      <a>Home</a>
+      <a class="">About</a>
+      <a class="">Projects</a>
+      <a class="">Docs</a>
+      <a class="">Login</a>
+    </div>
+  </div>
+</nav> -->
+
+<!-- <div class="hero is-full-screen">
+  <div class="logo is-center is-vertical-align">
+    <img src="/assets/logo.svg" alt="">
+    <h3>A <strong>micro</strong> (~3kb) CSS framework.</h3>
+    <small><em>FWIW, "choṭā" means "small" in Hindi</em></small>
+  </div>
+  <nav class="tabs is-center">
+    <a href="#features">features</a>
+    <a href="#start">start</a>
+    <a href="#docs">docs</a>
+    <a href="https://github.com/jenil/chota">GitHub</a>
+    <a href="javascript:void(0)" id="theme-switch" onclick="switchMode(this)">☀️</a>
+  </nav>
+</div> -->
+
+<section>
+  <h4>Utilities</h4>
+  <p>
+    You can apply these helper classes to almost any element, in order to alter
+    its style.
+  </p>
+  <!-- <form action="/add" method="get"><label><input type=button value="Add"></label></form> -->
+  
+   <details class="dropdown"><!-- open="" -->
+    <summary class="button outline">Add</summary>
+    <form class="card row" action="/add" method="post">
+      <p>Заполните поля 1,2,3</p>
+      <label>123:<input class="col-12" placeholder="username"></input><label>
+      <label>456:<input class="col-12" placeholder="..." type="text"></input><label>
+      werwrw<label>789:<input class="col-12" placeholder="..." type="text"></input><label>
+      <footer class="is-right">
+        <!-- <a class="button clear">Sign up</a> -->
+        <button type="reset">clear</button>
+        <button type="submit">Save</button>
+      </footer>
+    </form>
+  </details>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>FIO</th>
+        <th>TEL</th>
+        <th>ACT</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Андрей Сосед с 3-его</td>
+      <td>+3099000000001</td>
+      <td><a href="/edit" target="_blank">edit</a> <a href="/edit" target="_blank">delete</a></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Карина c 6го</td>
+      <td>+3099000000001</td>
+      <td><a href="/edit" target="_blank">edit</a> <a href="/edit" target="_blank">delete</a></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Инна с 3-го</td>
+      <td>+3099000000001</td>
+      <td><a href="/edit" target="_blank">edit</a> <a href="/edit" target="_blank">delete</a></td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section id="docs">
+
+<header class="row">
+        <div class="col is-vertical-align">
+          <h1 class="is-marginless">Обработка ордеров</h1>
+        </div>
+<!--         <div class="col is-right">
+          <nav class="tabs">
+            <a href="#customizing">customizing</a>
+            <a href="#components">components</a>
+    <details class="dropdown">
+      <summary class="button outline">My Profile</summary>
+      <div class="card">
+        <p><a href="#">Edit</a></p>
+        <p><a href="#">Alerts&nbsp;<span class="tag">3</span></a></p>
+        <hr>
+        <p><a href="#" class="text-error">Logout</a></p>
+    </div>
+  </details>
+  <details class="dropdown">
+    <summary class="button outline">Login</summary>
+    <form class="card row">
+      <input class="col-12" placeholder="username" disabled>
+      <input class="col-12" placeholder="password" type="password" disabled>
+      <footer class="is-right">
+        <a class="button clear">Sign up</a>
+        <button type="submit" disabled>Sign in</button>
+      </footer>
+    </form>
+  </details>
+
+          </nav>
+        </div> -->
+</header>
+
+      <!-- <br> -->
+      <p>Вы можете обработать <a href="/index#start">ордер</a>. При отправке через форму файла ордера xxxxxxxx.xlsx то сервер обработает данные в таблице - умножит цены по всем единицам на 1.1 и вернет вам файл xxxxxxx_recalc.xlsx. Если вы отправите файл .xls то сервер преобразует в xlsx-файл и обработает данные в таблице - так-же умножит цены по всем единицам на 1.1 и вернет вам файл xxxxx_ready.xlsx:</p>
+      <ul>
+        <li><a href="/index#start">Обработать xls ордер</a></li>
+        <li><a href="/index#start">Обработать xlsx ордер</a></li>
+        <li><a href="/index#docs">Вернутся на главную</a></li>
+      </ul>
+      <br>
+
+
+
+    @for article in articles
+    <div>
+      <b>@article.title</b> <br>
+      @{ as_html(article.text) }
+      <br>
+    </div>
+    <br>
+    @end
+    <h1><a href="/new">New article</a></h1>
+
+    
+    </section>
+
+    <section id="start">
+      <h2>Приступить к обработке</h2>
+      <p>Вы можете загрузить ордер <code>xxxxx.xlsx</code> или <code>xxxxx.xls</code> (<a href="/index#docs">Подробно</a>).</p>
+      <br>
+      <p>Link this CSS in your HTML:</p>
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://unpkg.com/chota_latest"</span><span class="nt">&gt;</span></code></pre></figure>
+      <br>
+      <p>
+        <form id="ordersend" method="post" enctype="multipart/form-data" action="/ordersend" target="_self">
+          <label>Множитель
+            <input class="" type="text" name="mult" value="1.1" placeholder="*Множитель">
+          </label>
+          <label>Add order .xlsx/.xlsx file
+            <input class="button outline primary" type="file" name="doc">
+          </label>
+          <br>
+          <input type="submit" value="Обработать">
+      </p>
+      <br>
+      <!-- <p>Install it from <code>npm</code> or <code>yarn</code></p>
+      <figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm <span class="nb">install </span>chota</code></pre></figure> -->
+    </section>
+
+<section id="utilities">
+  <h4>Utilities</h4>
+  <p>
+    You can apply these helper classes to almost any element, in order to alter
+    its style.
+  </p>
+  <ul>
+    <li>
+      <code>text-primary</code> - <span class="text-primary">Primary text</span>
+    </li>
+    <li>
+      <code>text-light</code> - <span class="text-light">Light text</span>
+    </li>
+    <li>
+      <code>text-white</code> -
+      <span class="bg-primary text-white">White text</span>
+    </li>
+    <li><code>text-dark</code> - <span class="text-dark">Dark text</span></li>
+    <li><code>text-grey</code> - <span class="text-grey">Grey text</span></li>
+    <li>
+      <code>text-error</code> - <span class="text-error">Error text</span>
+    </li>
+    <li>
+      <code>text-success</code> - <span class="text-success">Success text</span>
+    </li>
+    <li>
+      <code>bg-primary</code> -
+      <span class="bg-primary">primary background</span>
+    </li>
+    <li>
+      <code>bg-light</code> - <span class="bg-light">Light background</span>
+    </li>
+    <li><code>bg-dark</code> - <span class="bg-dark">Dark background</span></li>
+    <li><code>bg-grey</code> - <span class="bg-grey">Grey background</span></li>
+    <li>
+      <code>bg-error</code> - <span class="bg-error">Error background</span>
+    </li>
+    <li>
+      <code>bg-success</code> -
+      <span class="bg-success">Success background</span>
+    </li>
+    <li>
+      <code>bd-primary</code> - <span class="bd-primary">primary border</span>
+    </li>
+    <li><code>bd-light</code> - <span class="bd-light">Light border</span></li>
+    <li><code>bd-dark</code> - <span class="bd-dark">Dark border</span></li>
+    <li><code>bd-grey</code> - <span class="bd-grey">Grey border</span></li>
+    <li><code>bd-error</code> - <span class="bd-error">Error border</span></li>
+    <li>
+      <code>bd-success</code> - <span class="bd-success">Success border</span>
+    </li>
+    <li><code>pull-right</code> - floats an element to the right</li>
+    <li><code>pull-left</code> - floats an element to the left</li>
+    <li><code>text-center</code> - center aligns text</li>
+    <li><code>text-left</code> - left aligns text</li>
+    <li><code>text-right</code> - right aligns text</li>
+    <li><code>text-justify</code> - justify aligns text</li>
+    <li><code>text-uppercase</code> - text to uppercase</li>
+    <li><code>text-lowercase</code> - text to lowercase</li>
+    <li><code>text-capitalize</code> - capitalizes text</li>
+    <li><code>is-full-screen</code> - makes the element 100% view height</li>
+    <li><code>is-full-width</code> - make the element 100% width</li>
+    <li>
+      <code>is-vertical-align</code> - vertically centers element using flex
+    </li>
+    <li>
+      <code>is-horizontal-align</code> - horizontal centers element using flex
+    </li>
+    <li><code>is-center</code> - centers element using flex</li>
+    <li><code>is-right</code> - right aligns element using flex</li>
+    <li><code>is-left</code> - left aligns element using flex</li>
+    <li><code>is-fixed</code> - fixed positioned element</li>
+    <li><code>is-paddingless</code> - removes any padding</li>
+    <li><code>is-marginless</code> - removes any margin</li>
+    <li><code>is-rounded</code> - make the element round</li>
+    <li><code>clearfix</code> - clears the floats</li>
+    <li><code>is-hidden</code> - hides the element completely</li>
+    <li><code>hide-xs</code> - hides the element for screens &lt;600px</li>
+    <li>
+      <code>hide-sm</code> - hides the element for screens &gt;=600px and
+      &lt;900px
+    </li>
+    <li>
+      <code>hide-md</code> - hides the element for screens &gt;=900px and
+      &lt;1200px
+    </li>
+    <li><code>hide-lg</code> - hides the element for screens &gt;=1200px</li>
+    <li><code>hide-pr</code> - hides the element for printing</li>
+  </ul>
+  <h4>Details</h4>
+  <p>You can have a <code>&lt;details&gt;</code> to defines a toggle-able block of content with a summary and additional details.</p>
+  <details>
+    <summary>Read more</summary>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec
+      nulla vitae mollis.
+    </p>
+  </details>
+  <p>This can be coupled to a <code>.dropdown</code> and a couple of <code>.button</code> and <code>.card</code> classes to defines a dropdown button.</p>
+  <details class="dropdown">
+      <summary class="button outline">My Profile</summary>
+      <div class="card">
+        <p><a href="#">Edit</a></p>
+        <p><a href="#">Alerts&nbsp;<span class="tag">3</span></a></p>
+        <hr>
+        <p><a href="#" class="text-error">Logout</a></p>
+    </div>
+  </details>
+  <details class="dropdown" open="">
+    <summary class="button outline">Login</summary>
+    <form class="card row">
+      <input class="col-12" placeholder="username">
+      <input class="col-12" placeholder="password" type="password">
+      <footer class="is-right">
+        <a class="button clear">Sign up</a>
+        <button type="submit">Sign in</button>
+      </footer>
+    </form>
+  </details>
+</section>
+
+<!-- <section id="utilities">
+  <h4>Details</h4>
+  <p>You can have a <code>&lt;details&gt;</code> to defines a toggle-able block of content with a summary and additional details.</p>
+  <details>
+    <summary>Read more</summary>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec
+      nulla vitae mollis.
+    </p>
+  </details>
+  <p>This can be coupled to a <code>.dropdown</code> and a couple of <code>.button</code> and <code>.card</code> classes to defines a dropdown button.</p>
+  <details class="dropdown">
+      <summary class="button outline">My Profile</summary>
+      <div class="card">
+        <p><a href="#">Edit</a></p>
+        <p><a href="#">Alerts&nbsp;<span class="tag">3</span></a></p>
+        <hr>
+        <p><a href="#" class="text-error">Logout</a></p>
+    </div>
+  </details>
+  <details class="dropdown">
+    <summary class="button outline">Login</summary>
+    <form class="card row">
+      <input class="col-12" placeholder="username">
+      <input class="col-12" placeholder="password" type="password">
+      <footer class="is-right">
+        <a class="button clear">Sign up</a>
+        <button type="submit">Sign in</button>
+      </footer>
+    </form>
+  </details>
+</section> -->
+
+
+      <!-- <br> -->
+<!--       <section id="icons">
+        <h4>Icons</h4>
+        <p>While you are free to use any icon library that you, I'd just like to drop a link to <a href="http://icongr.am/" target="_blank">Icongram</a> here. It's the <em>quickest</em> way you can add icons to any website.</p>
+      <br>
+      <p class="is-center">
+      <a class="button primary outline" target="_blank" href="https://twitter.com/intent/tweet?url=https://jenil.github.io/chota/&amp;text=chota.css%20-%20A%20micro%20CSS%20framework&amp;via=geekGogari&amp;hashtags=web,css">Give a shout-out 📢</a>
+      </p>
+    </section> -->
+  
+  <footer class="is-text-center">
+    <p><a href="/index#top">🔝 Back to top</a> • <a href="https://localhost:3000">🐛 Report an issue</a> • <a href="https://paypal.me/jgog/10" target="_blank">🎗 Donate</a></p>
+    <p>Want icons for your project too? Checkout <a href="https://icongr.am/" target="_blank">Icongr.am 🚀</a></p>
+    <h5>Made by <a href="https://jgog.in/" target="_blank">Jenil Gogari</a></h5>
+  </footer>
+</div>
+  <!-- <script async="" src="/assets/analytics.js"></script> -->
+  <script>
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.classList.add("dark");
+      document.querySelector('#theme-switch').innerHTML = "🌙"
+    }
+
+    function switchMode(el) {
+      const bodyClass = document.body.classList;
+      bodyClass.contains("dark")
+        ? ((el.innerHTML = "☀️"), bodyClass.remove("dark"))
+        : ((el.innerHTML = "🌙"), bodyClass.add("dark"));
+    }
+  </script>
+</body>
+</html>

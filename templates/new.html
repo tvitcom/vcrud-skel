@@ -1,0 +1,25 @@
+@include '_header'
+
+<section>
+<div class="row is-left">
+    <div class="col-6">
+		<form action='/new' method='post'>
+	        <header>
+	          <h4>Form for Item</h4>
+	        </header>
+	        <p>A nisi ullam impedit cupiditate?</p>
+			<input type='text' placeholder='Fullname' name='fullname'>
+			<br>
+			<!-- <textarea placeholder='Text' name='text'></textarea> -->
+			<input type='tel' placeholder='Title' name='tel'>
+			<br>
+	        <footer>
+			<input type='reset' value='Clear'>
+			<input type='submit' value='Save it!'>
+	        </footer>
+		</form>
+    </div>
+  </div>
+</section>
+
+@include '_footer'
