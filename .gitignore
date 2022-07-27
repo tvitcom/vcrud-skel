@@ -1,0 +1,17 @@
+*~
+*#*
+*.swp
+/123
+/main
+/vsite-skel
+config.json
+/site.sqlite
+/*.sublime-project
+/*.sublime-workspace
+
+# Binaries for programs and plugins
+*.exe
+*.so
+*.dylib
+*.dll
+vls.log
